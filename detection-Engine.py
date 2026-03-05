@@ -25,7 +25,6 @@ def detect(parsed_data):
         alerts.append(f"Spam detected from {sender}")
     
     return alerts
-
 if __name__ == "__main__":
     test_data = {"from": "attacker@test.com"}
 
