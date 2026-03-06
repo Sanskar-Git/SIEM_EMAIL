@@ -1,0 +1,63 @@
+[
+    {
+        "ID": "vkIvWYE3WZZdHf7sMiN5J-kdadJAtYngPvPhjX-Wng8=@mailhog.example",
+        "From": {
+            "Relays": null,
+            "Mailbox": "attacker",
+            "Domain": "evil.com",
+            "Params": ""
+        },
+        "To": [
+            {
+                "Relays": null,
+                "Mailbox": "victim",
+                "Domain": "company.com",
+                "Params": ""
+            }
+        ],
+        "Content": {
+            "Headers": {
+                "Content-Transfer-Encoding": [
+                    "7bit"
+                ],
+                "Content-Type": [
+                    "text/plain; charset=\"us-ascii\""
+                ],
+                "From": [
+                    "attacker@evil.com"
+                ],
+                "MIME-Version": [
+                    "1.0"
+                ],
+                "Message-ID": [
+                    "vkIvWYE3WZZdHf7sMiN5J-kdadJAtYngPvPhjX-Wng8=@mailhog.example"
+                ],
+                "Received": [
+                    "from DESKTOP-PRERNA.domain.name by mailhog.example (MailHog)\r\n          id vkIvWYE3WZZdHf7sMiN5J-kdadJAtYngPvPhjX-Wng8=@mailhog.example; Fri, 06 Mar 2026 10:46:52 +0000"
+                ],
+                "Return-Path": [
+                    "<attacker@evil.com>"
+                ],
+                "Subject": [
+                    "Urgent: Click this now"
+                ],
+                "To": [
+                    "victim@company.com"
+                ]
+            },
+            "Body": "This is a test email with suspicious link http://malicious-site.com",
+            "Size": 249,
+            "MIME": null
+        },
+        "Created": "2026-03-06T10:46:52.578837077Z",
+        "MIME": null,
+        "Raw": {
+            "From": "attacker@evil.com",
+            "To": [
+                "victim@company.com"
+            ],
+            "Data": "Content-Type: text/plain; charset=\"us-ascii\"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: 7bit\r\nSubject: Urgent: Click this now\r\nFrom: attacker@evil.com\r\nTo: victim@company.com\r\n\r\nThis is a test email with suspicious link http://malicious-site.com",
+            "Helo": "DESKTOP-PRERNA.domain.name"
+        }
+    }
+]
